@@ -27,7 +27,7 @@ namespace TDD.Test
 
             //Assert
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("验证这个测试方法的正确性");
+            Assert.Inconclusive("验证这个测试方法的正确性.");
         }
     }
 }
