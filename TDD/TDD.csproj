@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="TddFiveDay\AccountDao.cs" />
     <Compile Include="TddFiveDay\Hash.cs" />
+    <Compile Include="TddFiveDay\RandomGenerator.cs" />
     <Compile Include="TddFiveDay\Validation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

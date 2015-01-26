@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TDD.TddFiveDay;
 using TddTest._5Day;
 
 namespace TDD.Test
@@ -16,9 +17,10 @@ namespace TDD.Test
             //Arrange
             IAccountDao accDao = new StubAccountDao();
             IHash hash = new StubHash();
-            Validation target = new Validation(accDao, hash);
+            IRandomGenerator random = new RandomGenerator();
+            Validation target = new Validation(accDao, hash, random);
             string id = "admin";//string.Empty;
-            string password = "password";//string.Empty;
+            string password = "password" + random.RandomStr;//string.Empty;
             bool expected = true;
             bool actual;
 
@@ -27,7 +29,7 @@ namespace TDD.Test
 
             //Assert
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("验证这个测试方法的正确性.");
+            //Assert.Inconclusive("验证这个测试方法的正确性.");
         }
     }
 }

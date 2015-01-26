@@ -39,7 +39,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\..\Projects\orchard1.7.2\lib\nunit\nunit.framework.dll</HintPath>
+      <HintPath>..\..\Orchard.Source.1.7.2\lib\nunit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="nunit.util">
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
@@ -67,9 +67,6 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TDD\TDD.csproj">
       <Project>{6b181f7e-68b0-48ea-9c2d-3580c7291c07}</Project>
       <Name>TDD</Name>
@@ -77,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="5Day\Mocks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
